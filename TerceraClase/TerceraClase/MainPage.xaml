@@ -5,10 +5,17 @@
              x:Class="TerceraClase.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <StackLayout Padding="20">
+            <TimePicker TextColor="Navy"
+                        x:Name="timPickInicial">
+            </TimePicker>
+            <WebView x:Name="Browser"
+                     Source="https://university.xamarin.com/"
+                     WidthRequest="1000"
+                     HeightRequest="1000"
+                     Navigated="handle_Navigated">
+            </WebView>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>

@@ -11,7 +11,7 @@ namespace TerceraClase
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new Formulario();
 		}
 
 		protected override void OnStart ()

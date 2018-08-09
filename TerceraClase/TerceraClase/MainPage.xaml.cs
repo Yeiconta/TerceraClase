@@ -13,5 +13,12 @@ namespace TerceraClase
 		{
 			InitializeComponent();
 		}
-	}
+        async void handle_Navigated(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        {
+            await DisplayAlert("Completado",
+                               "Se ha completado la carga de la pagina",
+                               "OK");
+        }
+
+    }
 }
